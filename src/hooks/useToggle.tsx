@@ -1,13 +1,11 @@
 import { useState } from 'react'
 
-const initialState : boolean = false
-
 interface useToogleInterface {
     value : boolean,
     toggleValue : (value: boolean) => void
 }
 
-export default function useToggle(): useToogleInterface {
+export default function useToggle(initialState : boolean): useToogleInterface {
     const [value, setvalue] = useState(initialState)
 
     const toggleValue = (value : boolean) : void=> {

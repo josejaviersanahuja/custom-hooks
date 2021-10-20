@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import DebounceComponent from './components/DebounceComponent'
+import TimeoutComponent from './components/TimeoutComponent'
 import Toggle from './components/Toggle'
 
 
@@ -19,10 +21,10 @@ function App() {
           <Toggle/>          
         </main>  
         <main className="hook" id="2">
-          .
+          <TimeoutComponent/>
         </main>  
         <main className="hook" id="3">
-          .
+          <DebounceComponent/>
         </main>  
         <main className="hook" id="4">
           .
