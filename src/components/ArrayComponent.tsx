@@ -3,7 +3,7 @@ import useArray from '../hooks/useArray'
 
 export default function ArrayComponent(): ReactElement {
 
-    const {array, push, filter, update, remove, clear, } = useArray([1,2,3,4,5,6,7,8,9])
+    const {array, set, push, filter, update, remove, clear, } = useArray([1,2,3,4,5,6,7,8,9])
 
     return (
         <div>
@@ -13,6 +13,7 @@ export default function ArrayComponent(): ReactElement {
             <button onClick={()=> filter((e)=> e % 2 === 1)}>Filter odd numbers</button>
             <button onClick={()=> update(1,100)}>Replace 2nd number, now will be 100</button>
             <button onClick={()=> remove(2)}>Remove the third number</button>
+            <button onClick={()=> set([1,2])}>Set Array as [1,2]</button>
             <button onClick={()=> clear()}>Empty the array</button>
         </div>
     )

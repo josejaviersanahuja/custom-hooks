@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 
 interface useArrayInterface {
     array: Array<any>,
+    set: Dispatch<SetStateAction<any[]>>,
     push: (element:any)=> void,
     filter: (callback: (value:any, index?:number) => any) =>void,
     update: (index: number, newElement:any)=> void,
@@ -44,5 +45,5 @@ export default function useArray(defaultValue : Array<any>) : useArrayInterface 
         setarray([])
     }
 
-    return { array, push, filter, update, remove, clear}
+    return { array, set: setarray, push, filter, update, remove, clear}
 }
