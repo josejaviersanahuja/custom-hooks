@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import './App.css'
+import ArrayComponent from './components/ArrayComponent'
 import DebounceComponent from './components/DebounceComponent'
 import TimeoutComponent from './components/TimeoutComponent'
 import Toggle from './components/Toggle'
+import UpdateEffectComponent from './components/UpdateEffectComponent'
 
 
 function App() {
@@ -27,10 +29,10 @@ function App() {
           <DebounceComponent/>
         </main>  
         <main className="hook" id="4">
-          .
+          <UpdateEffectComponent/>
         </main>  
         <main className="hook" id="5">
-          .
+          <ArrayComponent/>
         </main>  
       </header>
       
