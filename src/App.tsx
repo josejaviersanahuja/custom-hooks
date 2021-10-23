@@ -2,6 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import ArrayComponent from './components/ArrayComponent'
 import DebounceComponent from './components/DebounceComponent'
+import PreviousComponent from './components/PreviousComponent'
+import StateWithHistoryComponent from './components/StateWithHistoryComponent'
+import StorageComponent from './components/StorageComponent'
 import TimeoutComponent from './components/TimeoutComponent'
 import Toggle from './components/Toggle'
 import UpdateEffectComponent from './components/UpdateEffectComponent'
@@ -33,6 +36,15 @@ function App() {
         </main>  
         <main className="hook" id="5">
           <ArrayComponent/>
+        </main>  
+        <main className="hook" id="6">
+          <PreviousComponent/>
+        </main>  
+        <main className="hook" id="7">
+          <StateWithHistoryComponent/>
+        </main>  
+        <main className="hook" id="8">
+          <StorageComponent/>
         </main>  
       </header>
       
