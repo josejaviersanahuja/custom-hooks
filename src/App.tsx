@@ -6,6 +6,7 @@ import DebounceComponent from './components/DebounceComponent'
 import DeepCompareEffectComponent from './components/DeepCompareEffectComponent'
 import EventListenerComponent from './components/EventListenerComponent'
 import FetchComponent from './components/FetchComponent'
+import OnScreenComponent from './components/OnScreenComponent'
 import PreviousComponent from './components/PreviousComponent'
 import ScriptComponent from './components/ScriptComponent'
 import StateWithHistoryComponent from './components/StateWithHistoryComponent'
@@ -13,6 +14,7 @@ import StorageComponent from './components/StorageComponent'
 import TimeoutComponent from './components/TimeoutComponent'
 import Toggle from './components/Toggle'
 import UpdateEffectComponent from './components/UpdateEffectComponent'
+import WindowSizeComponent from './components/WindowSizeComponent'
 
 
 function App() {
@@ -65,6 +67,12 @@ function App() {
         </main>  
         <main className="hook" id="13">
           <EventListenerComponent/>
+        </main>  
+        <main className="hook" id="14">
+          <OnScreenComponent/>
+        </main>  
+        <main className="hook" id="15">
+          <WindowSizeComponent/>
         </main>  
       </header>
       
