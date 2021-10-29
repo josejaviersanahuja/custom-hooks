@@ -11,7 +11,7 @@ export default function FetchComponent(): ReactElement {
         <div>
             <h1>useFetch hook 10</h1>
             <p>{error}</p>
-            <p> {value && Object.keys(value).map((key, i)=> <p key={i+key}>{key}: {value[key]}</p>)} </p>
+            <div> {value && Object.keys(value).map((key, i)=> <p key={i+key}>{key}: {value[key]}</p>)} </div>
             <p>{loading.toString()}</p>
             <button onClick={()=>setid(c=>c+1)}>Increment</button>
         </div>

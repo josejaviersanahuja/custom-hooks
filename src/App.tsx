@@ -3,8 +3,11 @@ import './App.css'
 import ArrayComponent from './components/ArrayComponent'
 import AsyncComponent from './components/AsyncComponent'
 import DebounceComponent from './components/DebounceComponent'
+import DeepCompareEffectComponent from './components/DeepCompareEffectComponent'
+import EventListenerComponent from './components/EventListenerComponent'
 import FetchComponent from './components/FetchComponent'
 import PreviousComponent from './components/PreviousComponent'
+import ScriptComponent from './components/ScriptComponent'
 import StateWithHistoryComponent from './components/StateWithHistoryComponent'
 import StorageComponent from './components/StorageComponent'
 import TimeoutComponent from './components/TimeoutComponent'
@@ -53,6 +56,15 @@ function App() {
         </main>  
         <main className="hook" id="10">
           <FetchComponent/>
+        </main>  
+        <main className="hook" id="11">
+          <ScriptComponent/>
+        </main>  
+        <main className="hook" id="12">
+          <DeepCompareEffectComponent/>
+        </main>  
+        <main className="hook" id="13">
+          <EventListenerComponent/>
         </main>  
       </header>
       
